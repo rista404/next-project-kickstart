@@ -1,0 +1,46 @@
+{
+  "name": "next-project-kickstart",
+  "version": "1.0.0",
+  "description": "Future-proof project kickstart - ES6, CSSNext",
+  "main": "index.js",
+  "scripts": {
+    "copy-files": "rsync -arv --exclude=css --exclude=js src/ dist/ ",
+    "prestart": "npm run copy-files",
+    "start": "npm-run-all --parallel dev:*",
+    "dev:js": "rollup --config ./config/rollup.dev.js --watch --sourcemap inline",
+    "dev:css": "postcss --config ./config/postcss.dev.json --watch --map",
+    "prebuild": "npm run copy-files",
+    "build": "npm-run-all --parallel build:*",
+    "build:js": "rollup --config ./config/rollup.prod.js",
+    "build:css": "postcss --config ./config/postcss.prod.json"
+  },
+  "keywords": [
+    "postcss",
+    "cssnext",
+    "es2015",
+    "autoprefixer",
+    "kickstart",
+    "npm",
+    "scripts"
+  ],
+  "author": "Nikola Ristic @rista404 <risticnikola@outlook.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "cssnano": "^3.7.4",
+    "npm-run-all": "^3.0.0",
+    "postcss": "^5.1.2",
+    "postcss-cli": "^2.6.0",
+    "postcss-cssnext": "^2.7.0",
+    "postcss-import": "^8.1.2",
+    "postcss-nesting": "^2.3.1",
+    "rollup": "^0.34.10",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-uglify": "^1.0.1",
+    "rollup-watch": "^2.5.0"
+  },
+  "dependencies": {
+    "normalize.css": "^4.2.0"
+  }
+}

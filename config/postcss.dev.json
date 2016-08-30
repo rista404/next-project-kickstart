@@ -1,0 +1,13 @@
+{
+    "use": [
+        "postcss-import",
+        "postcss-nesting",
+        "postcss-cssnext"
+    ],
+    "input": "src/css/main.css",
+    "output": "dist/bundle.min.css",
+    "local-plugins": true,
+    "cssnext": {
+        "browsers": "> 5%"
+    }
+}
