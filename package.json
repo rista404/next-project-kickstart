@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Future-proof project kickstart - ES6, CSSNext",
   "main": "index.js",
+  "repository": {
+     "type": "git",
+     "url": "https://github.com/rista404/next-project-kickstart"
+   },
   "scripts": {
     "copy-files": "rsync -arv --exclude=css --exclude=js src/ dist/ ",
     "start": "npm-run-all --parallel start:*",
@@ -21,7 +25,7 @@
     "npm",
     "scripts"
   ],
-  "author": "Nikola Ristic @rista404 <risticnikola@outlook.com>",
+  "author": "Nikola Ristic <risticnikola@outlook.com>",
   "license": "ISC",
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.8.0",
