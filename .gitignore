@@ -1,5 +1,5 @@
 node_modules
 .DS_Store
-dist/css
-dist/js
+dist/bundle.min.css
+dist/bundle.min.js
 npm-debug.log
