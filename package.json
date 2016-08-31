@@ -5,11 +5,9 @@
   "main": "index.js",
   "scripts": {
     "copy-files": "rsync -arv --exclude=css --exclude=js src/ dist/ ",
-    "prestart": "npm run copy-files",
-    "start": "npm-run-all --parallel dev:*",
-    "dev:js": "rollup --config ./config/rollup.dev.js --watch --sourcemap inline",
-    "dev:css": "postcss --config ./config/postcss.dev.json --watch --map",
-    "prebuild": "npm run copy-files",
+    "start": "npm-run-all --parallel start:*",
+    "start:js": "rollup --config ./config/rollup.dev.js --watch --sourcemap inline",
+    "start:css": "postcss --config ./config/postcss.dev.json --watch --map",
     "build": "npm-run-all --parallel build:*",
     "build:js": "rollup --config ./config/rollup.prod.js",
     "build:css": "postcss --config ./config/postcss.prod.json"
