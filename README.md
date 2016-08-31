@@ -1,11 +1,15 @@
 # "Next" project kickstart 🤘🏻 🚀
 
+*Still polishing some stuff.*
+
 Includes **es2015**, **cssnext** and a nice build system.
+
 Easily configurable, uses **rollup** and **postcss**.
 
-Just place `index.html` and all your stuff inside `/dist` directory.
 
-*Still polishing some stuff.*
+### Instructions
+
+Just place `index.html` and all your stuff inside `/dist` directory.
 
 Install all dependencies with `npm install`
 
