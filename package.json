@@ -37,7 +37,7 @@
     "postcss-cssnext": "^2.7.0",
     "postcss-import": "^8.1.2",
     "postcss-nesting": "^2.3.1",
-    "rollup": "^0.34.10",
+    "rollup": "^0.34.12",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-uglify": "^1.0.1",
     "rollup-watch": "^2.5.0"
