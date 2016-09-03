@@ -4,9 +4,9 @@
   "description": "Future-proof project kickstart - ES6, CSSNext",
   "main": "index.js",
   "repository": {
-     "type": "git",
-     "url": "https://github.com/rista404/next-project-kickstart"
-   },
+    "type": "git",
+    "url": "https://github.com/rista404/next-project-kickstart"
+  },
   "scripts": {
     "copy-files": "rsync -arv --exclude=css --exclude=js src/ dist/ ",
     "start": "npm-run-all --parallel start:*",
@@ -39,6 +39,8 @@
     "postcss-nesting": "^2.3.1",
     "rollup": "^0.34.12",
     "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-commonjs": "^4.1.0",
+    "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-uglify": "^1.0.1",
     "rollup-watch": "^2.5.0"
   },
